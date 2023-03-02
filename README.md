@@ -12,7 +12,16 @@
 - Serilog
 - Health check
 
+Documentação do projeto 
 ![image](https://user-images.githubusercontent.com/5544035/222324260-0deb9650-1642-4ca1-896e-0c3e919e068e.png)
+
+![image](https://user-images.githubusercontent.com/5544035/222324380-ed78e6a9-2c46-45b6-a076-30ae4b82832f.png)
+
+![image](https://user-images.githubusercontent.com/5544035/222324421-123b0035-571b-4403-9724-394d0e2d1a07.png)
+
+![image](https://user-images.githubusercontent.com/5544035/222324469-1a73daa2-9bd7-43a1-a5a7-919b8ee005ab.png)
+
+
 
 
 # SqlServer Docker
