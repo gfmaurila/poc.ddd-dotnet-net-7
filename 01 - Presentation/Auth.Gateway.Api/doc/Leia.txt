@@ -1,0 +1,84 @@
+
+ApiGatewayCore
+https://localhost:44349
+https://localhost:44349/swagger/index.html
+
+https://localhost:44375
+https://localhost:44375/swagger/index.html
+
+
+ApiServiceCoreAuth
+https://localhost:44375/swagger/index.html
+https://localhost:44349/gateway/auth
+
+ApiServiceCoreConfig
+https://localhost:44302/swagger/index.html
+https://localhost:44349/gateway/config
+
+ApiServiceCorePerson
+https://localhost:44303/swagger/index.html
+https://localhost:44349/gateway/person
+
+
+https://learn.microsoft.com/pt-br/dotnet/architecture/microservices/multi-container-microservice-net-applications/implement-api-gateways-with-ocelot
+
+dotnet run --project ApiGatewayCore.csproj
+
+dotnet run
+
+
+
+https://macoratti.net/22/12/net7_imgsemdockfle1.htm
+
+https://renatogroffe.medium.com/asp-net-core-docker-compose-implementando-solu%C3%A7%C3%B5es-web-multi-containers-5f46d22a2ca0
+
+https://learn.microsoft.com/pt-br/azure/service-fabric/service-fabric-tutorial-deploy-container-app-with-cicd-vsts
+
+
+https://learn.microsoft.com/pt-br/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker?view=aspnetcore-7.0
+
+
+Dapper
+https://lucascyrillo.com.br/web-api-com-dapper/
+
+
+
+Armazenamento de arquivos - GOogle Driver
+
+http://www.andrealveslima.com.br/blog/index.php/2017/04/12/utilizando-api-google-drive-no-c-e-vb-net/
+https://developers.google.com/api-client-library/dotnet/guide/aaa_oauth?hl=pt-br#web_applications
+
+
+
+
+API de Pagamento
+https://asaasv3.docs.apiary.io/#introduction/split-de-pagamentos/o-que-preciso-para-utilizar-o-split?
+
+
+
+
+PagSerguro 
+https://dev.pagseguro.uol.com.br/reference
+
+Serviço de envio de email
+https://sendgrid.com/
+
+Dica: https://balta.io/player/assistir/5c334f86-e717-9a7d-1240-481b00000000/4e1cb9c4-2bcf-476d-94be-000019720303
+
+https://signup.sendgrid.com/
+usuario: gfmaurila@gmail.com
+senha: @G18u03i1986@C23l10a1985
+
+https://app.sendgrid.com/settings/api_keys
+Chave de API criada: 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
+
+
+
+
+
+
+
+
+
+
+

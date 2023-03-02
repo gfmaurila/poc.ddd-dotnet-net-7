@@ -1,0 +1,86 @@
+version: '3.9'
+
+services:
+  auth.gateway.api:
+    image: ${DOCKER_REGISTRY-}authgatewayapi
+    build:
+      context: .
+      dockerfile: 01 - Presentation/Auth.Gateway.Api/Dockerfile 
+    ports:
+      - "8080:8080"
+    depends_on:
+      - auth.api
+      - auth.config.api
+      - auth.healthcheck
+      - sqlserver
+      - mongodb
+      - rabbitmq
+
+  auth.api:
+    image: ${DOCKER_REGISTRY-}authapi
+    build:
+      context: .
+      dockerfile: 01 - Presentation/Auth.Api/Dockerfile
+    ports:
+      - "5000:5000"
+    depends_on:
+      - sqlserver
+      - mongodb
+      - rabbitmq
+
+  auth.config.api:
+    image: ${DOCKER_REGISTRY-}authconfigapi
+    build:
+      context: .
+      dockerfile: 01 - Presentation/Auth.Config.Api/Dockerfile
+    ports:
+      - "5001:5001"
+    depends_on:
+      - sqlserver
+      - mongodb
+      - rabbitmq
+
+  auth.healthcheck:
+    image: ${DOCKER_REGISTRY-}auth.healthcheck
+    build:
+      context: .
+      dockerfile: 01 - Presentation/Auth.HealthCheck/Dockerfile 
+    ports:
+      - "5002:5002"
+    depends_on:
+      - sqlserver
+      - mongodb
+      - rabbitmq
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: "@C23l10a1985"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Developer"
+    ports:
+      - "1433:1433"
+
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: gfmaurila
+      MONGO_INITDB_ROOT_PASSWORD: C23l10a1985
+    ports:
+      - "27018:27017"
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq'
+    ports:
+        - 5672:5672
+        - 15672:15672
+    volumes:
+        - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+        - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+    networks:
+        - rabbitmq_go_net
+
+networks:
+  rabbitmq_go_net:
+    driver: bridge

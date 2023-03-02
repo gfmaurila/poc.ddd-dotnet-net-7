@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dto\Identity\**" />
+    <EmbeddedResource Remove="Dto\Identity\**" />
+    <None Remove="Dto\Identity\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\04 - Infrastructure\4.2 - CrossCutting\Auth.Infrastruture.CrossCutting.Domain\Auth.Infrastruture.CrossCutting.Domain.csproj" />
+    <ProjectReference Include="..\..\04 - Infrastructure\4.2 - CrossCutting\Auth.Infrastruture.CrossCutting.Request\Auth.Infrastruture.CrossCutting.Request.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+	  
+	<PackageReference Include="Serilog" Version="2.12.0" />
+	<PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+	<PackageReference Include="Serilog.Sinks.ColoredConsole" Version="3.0.1" />
+	<PackageReference Include="Serilog.Sinks.MongoDB" Version="5.3.1" />
+	  
+	<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\03 - Domain\Auth.Domain.Services\Auth.Domain.Services.csproj" />
+    <ProjectReference Include="..\..\4.1 - Data\Auth.Infrastructure.Data\Auth.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\..\4.1 - Data\Auth.Infrastruture.Repository\Auth.Infrastruture.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

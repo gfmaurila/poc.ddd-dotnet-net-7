@@ -1,0 +1,43 @@
+﻿{
+  "profiles": {
+
+    "DEV": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "monitor",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5020",
+      "dotnetRunMessages": true
+    },
+
+    "HML": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "monitor",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Staging"
+      }
+    },
+
+    "PROD": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "monitor",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      }
+    }
+  
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:8464",
+      "sslPort": 44316
+    }
+  }
+}

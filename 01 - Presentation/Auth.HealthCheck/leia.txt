@@ -1,0 +1,14 @@
+﻿
+
+
+https://localhost:44359/monitor#/healthchecks
+
+
+
+RabbitMQ
+http://localhost:15672
+
+
+
+
+

@@ -1,0 +1,22 @@
+﻿
+https://github.com/lifeparticle/PostgreSql-Snippets
+
+https://towardsdatascience.com/how-to-run-postgresql-using-docker-15bf87b452d4
+
+https://community.pyramidanalytics.com/t/h7hk07w/how-to-backup-and-restore-a-postgresql-database-via-dbeaver
+
+SQL Server 
+https://www.macoratti.net/21/04/docker_sqlasp1.htm
+
+PostgreSQL
+https://levelup.gitconnected.com/creating-and-filling-a-postgres-db-with-docker-compose-e1607f6f882f
+https://github.com/jdaarevalo/docker_postgres_with_data
+https://hub.docker.com/_/postgres/
+
+docker compose up
+
+
+https://learn.microsoft.com/pt-br/dotnet/architecture/microservices/docker-application-development-process/docker-app-development-workflow
+
+
+

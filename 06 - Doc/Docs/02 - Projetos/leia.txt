@@ -1,0 +1,115 @@
+
+
+https://learn.microsoft.com/pt-br/dotnet/core/tools/
+
+
+
+
+
+ApiGatewayCore
+https://localhost:44349
+https://localhost:44349/swagger/index.html
+
+https://localhost:44301
+https://localhost:44301/swagger/index.html
+
+
+ApiServiceCoreAuth
+https://localhost:44301/swagger/index.html
+https://localhost:44349/gateway/auth
+
+ApiServiceCoreConfig
+https://localhost:44302/swagger/index.html
+https://localhost:44349/gateway/config
+
+ApiServiceCorePerson
+https://localhost:44303/swagger/index.html
+https://localhost:44349/gateway/person
+
+-------------------
+
+
+
+
+
+Exemplo: https://renatogroffe.medium.com/asp-net-core-entity-framework-ativando-o-logging-de-instru%C3%A7%C3%B5es-sql-9c85fbba8364
+
+"Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information",
+      "Microsoft.EntityFrameworkCore": "Information"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  using Microsoft.EntityFrameworkCore.Migrations;
+
+#nullable disable
+
+namespace Auth.Infrastructure.Data.Migrations.EF
+{
+    /// <inheritdoc />
+    public partial class AddViewUserList : Migration
+    {
+        /// <inheritdoc />
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.Sql(@"
+                USE [AuthAPI]
+                GO
+
+                /****** Object:  View [dbo].[ViewUserList]    Script Date: 25/01/2023 00:13:25 ******/
+                SET ANSI_NULLS ON
+                GO
+
+                SET QUOTED_IDENTIFIER ON
+                GO
+
+                CREATE VIEW [dbo].[ViewUserList]
+                AS
+                SELECT        ProductId, Id, AccountId, Name, Status, UserName, Email, PhoneNumber, FileName, MainCompany, Modified, IsResetPassword, IsCustomer, IsCompany
+                FROM            dbo.AspNetUsers
+                GO                
+            ");
+        }
+
+        /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+
+        }
+    }
+}

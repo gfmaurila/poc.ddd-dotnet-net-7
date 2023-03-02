@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{453EA80B-99BE-4CE2-BFC3-F5C167AAA1CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGatewayCore", "ApiGatewayCore.csproj", "{1506B6E4-CF60-475A-8D2C-F80470D675C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1506B6E4-CF60-475A-8D2C-F80470D675C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1506B6E4-CF60-475A-8D2C-F80470D675C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1506B6E4-CF60-475A-8D2C-F80470D675C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1506B6E4-CF60-475A-8D2C-F80470D675C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1506B6E4-CF60-475A-8D2C-F80470D675C6} = {453EA80B-99BE-4CE2-BFC3-F5C167AAA1CE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14E142DB-AAB3-4762-B9FF-AF23DCBB0531}
+	EndGlobalSection
+EndGlobal
